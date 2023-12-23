@@ -1,0 +1,9 @@
+---
+- name: configure desktop
+  hosts: localhost
+  connection: local
+
+  tasks:
+    - name: ping my host
+      ansible.builtin.ping:
+

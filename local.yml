@@ -1,6 +1,7 @@
 ---
 - hosts: localhost
   connection: local
+  become_user: felix
 
   tasks:
     - name: ping this host computer

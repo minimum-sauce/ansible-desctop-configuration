@@ -1,9 +1,7 @@
 ---
 - hosts: localhost
   connection: local
-  become: true
 
   tasks:
-    name: install tmux
-    package:
-      name: tmux
+    - name: ping this host computer
+      ansible.builtin.ping:

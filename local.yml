@@ -1,9 +1,9 @@
 ---
-- name: configure desktop
-  hosts: localhost
+- hosts: localhost
   connection: local
+  become: true
 
   tasks:
-    - name: ping my host
-      ansible.builtin.ping:
-
+    name: install tmux
+    package:
+      name: tmux
